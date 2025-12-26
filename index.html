@@ -3,158 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <title>US.TV | تماشای آنلاین فیلم</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* { box-sizing: border-box; margin:0; padding:0; }
-body {
-    font-family: Tahoma, sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-}
-header {
-    background: linear-gradient(90deg,#e50914,#b20710);
-    padding:20px;
-    text-align:center;
-    font-size:28px;
-    font-weight:bold;
-}
-nav {
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    background:#141414;
-    padding:10px;
-    font-size:14px;
-}
-nav span {
-    cursor:pointer;
-    color:#ccc;
-}
-nav span:hover { color:#fff; }
-.section {
-    padding:20px;
-}
-.section h2 {
-    margin-bottom:15px;
-    border-left:4px solid #e50914;
-    padding-left:10px;
-    color:#00ffcc;
-}
-.movies {
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
-}
-.movie {
-    background:#1a1a1a;
-    border-radius:10px;
-    padding:15px;
-    transition: transform 0.2s;
-}
-.movie:hover { transform:scale(1.03); }
-.movie img {
-    width:100%;
-    border-radius:8px;
-}
-.movie h3 {
-    margin:10px 0 5px;
-    font-size:16px;
-}
-.movie p { font-size:13px; color:#aaa; }
-.movie video { width:100%; border-radius:8px; background:#000; margin-top:10px; }
-footer {
-    text-align:center;
-    padding:15px;
-    background:#141414;
-    font-size:13px;
-    color:#888;
-}
-@media(max-width:600px){
-    nav { flex-direction: column; gap:10px; }
-}
+body{margin:0;font-family:tahoma;background:#0f0f0f;color:#fff}
+header{background:#000;padding:15px;text-align:center;font-size:22px}
+.movies{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:20px}
+.card{background:#1c1c1c;border-radius:12px;padding:10px}
+video{width:100%;border-radius:10px}
+h3{font-size:16px;margin:10px 0}
 </style>
 </head>
 <body>
 
-<header>US.TV – پلتفرم آنلاین فیلم</header>
+<header>🎬 US.TV | تماشای آنلاین فیلم</header>
 
-<nav>
-<span>🎬 سینمایی</span>
-<span>😱 ترسناک</span>
-<span>🎞 کلاسیک</span>
-<span>🌿 مستند</span>
-</nav>
-
-<div class="section">
-<h2>فیلم‌های سینمایی</h2>
 <div class="movies">
 
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Night+of+the+Living+Dead" alt="">
-<h3>Night of the Living Dead (1968)</h3>
-<p>ترسناک | رایگان</p>
+<div class="card">
+<h3>Big Buck Bunny (فیلم سینمایی رایگان)</h3>
 <video controls>
-<source src="https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4" type="video/mp4">
+<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
 </video>
 </div>
 
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=The+General" alt="">
-<h3>The General (1926)</h3>
-<p>اکشن / کلاسیک | رایگان</p>
+<div class="card">
+<h3>Sintel (فیلم سینمایی رایگان)</h3>
 <video controls>
-<source src="https://archive.org/download/TheGeneral1926_201905/TheGeneral1926.mp4" type="video/mp4">
+<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
 </video>
 </div>
 
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=His+Girl+Friday" alt="">
-<h3>His Girl Friday (1940)</h3>
-<p>کمدی / عاشقانه | رایگان</p>
+<div class="card">
+<h3>Tears of Steel (فیلم سینمایی رایگان)</h3>
 <video controls>
-<source src="https://archive.org/download/his_girl_friday/his_girl_friday_512kb.mp4" type="video/mp4">
+<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
 </video>
 </div>
 
 </div>
-</div>
-
-<div class="section">
-<h2>مستند و طبیعت</h2>
-<div class="movies">
-
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Forest+Relax" alt="">
-<h3>🌿 Forest Relax</h3>
-<p>مستند | رایگان</p>
-<video controls>
-<source src="https://cdn.pixabay.com/video/2020/03/30/34647-404026403_large.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Ocean+Waves" alt="">
-<h3>🌊 Ocean Waves</h3>
-<p>مستند | رایگان</p>
-<video controls>
-<source src="https://cdn.pixabay.com/video/2019/07/25/25301-350703053_large.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Flowers+Close+Up" alt="">
-<h3>🌸 Flowers Close Up</h3>
-<p>مستند | رایگان</p>
-<video controls>
-<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
-</video>
-</div>
-
-</div>
-</div>
-
-<footer>
-© 2025 US.TV – نسخه آزمایشی | همه فیلم‌ها قانونی و رایگان
-</footer>
 
 </body>
 </html>
