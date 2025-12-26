@@ -3,162 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <title>US.TV | تماشای آنلاین فیلم</title>
-
 <style>
-* { box-sizing: border-box; }
-
 body {
-  margin: 0;
-  font-family: Tahoma, sans-serif;
-  background: #0f0f0f;
-  color: #fff;
+  background:#0b0b0b;
+  color:#fff;
+  font-family:tahoma;
+  margin:0;
 }
-
 header {
-  background: linear-gradient(90deg, #e50914, #b20710);
-  padding: 20px;
-  text-align: center;
-  font-size: 26px;
-  font-weight: bold;
+  background:#111;
+  padding:20px;
+  text-align:center;
+  font-size:26px;
+  color:#00ffcc;
 }
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background: #141414;
-  padding: 10px;
-  font-size: 14px;
+section {
+  padding:20px;
 }
-
-nav span {
-  cursor: pointer;
-  color: #ccc;
-}
-
-nav span:hover {
-  color: #fff;
-}
-
-.section {
-  padding: 25px;
-}
-
-.section h2 {
-  margin-bottom: 15px;
-  border-right: 4px solid #e50914;
-  padding-right: 10px;
-}
-
-.movies {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
 .movie {
-  background: #1a1a1a;
-  padding: 15px;
-  border-radius: 10px;
+  margin-bottom:40px;
 }
-
-.movie h3 {
-  font-size: 16px;
-  margin: 0 0 10px;
-}
-
-.movie p {
-  font-size: 13px;
-  color: #aaa;
-}
-
 video {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
-  background: black;
+  width:100%;
+  max-width:800px;
+  border-radius:10px;
+  background:#000;
 }
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #141414;
-  font-size: 13px;
-  color: #888;
+h2 {
+  border-bottom:1px solid #333;
+  padding-bottom:5px;
+  color:#00ffcc;
+}
+h3 {
+  margin:10px 0;
 }
 </style>
 </head>
 
 <body>
 
-<header>US.TV – تماشای آنلاین فیلم و مستند</header>
+<header>US.TV – تماشای آنلاین فیلم رایگان</header>
 
-<nav>
-  <span>🎬 سینمایی</span>
-  <span>😱 ترسناک</span>
-  <span>🎞 کلاسیک</span>
-  <span>🌿 مستند</span>
-</nav>
+<section>
 
-<div class="section">
-<h2>فیلم‌های سینمایی</h2>
-
-<div class="movies">
+<h2>🎬 طبیعت و آرامش</h2>
 
 <div class="movie">
-<h3>Night of the Living Dead (1968)</h3>
-<p>ترسناک | رایگان</p>
+<h3>🌿 Forest Relax</h3>
 <video controls>
-<source src="https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4">
+<source src="https://cdn.pixabay.com/video/2020/03/30/34647-404026403_large.mp4" type="video/mp4">
 </video>
 </div>
 
 <div class="movie">
-<h3>The General (1926)</h3>
-<p>اکشن / کلاسیک | رایگان</p>
+<h3>🌊 Ocean Waves</h3>
 <video controls>
-<source src="https://archive.org/download/TheGeneral1926_201905/TheGeneral1926.mp4">
+<source src="https://cdn.pixabay.com/video/2019/07/25/25301-350703053_large.mp4" type="video/mp4">
+</video>
+</div>
+
+<h2>🎬 مستند طبیعت</h2>
+
+<div class="movie">
+<h3>🏔 Mountain View</h3>
+<video controls>
+<source src="https://cdn.pixabay.com/video/2020/04/27/37075-412015463_large.mp4" type="video/mp4">
 </video>
 </div>
 
 <div class="movie">
-<h3>His Girl Friday (1940)</h3>
-<p>کمدی / عاشقانه | رایگان</p>
+<h3>🌸 Flowers Close Up</h3>
 <video controls>
-<source src="https://archive.org/download/his_girl_friday/his_girl_friday_512kb.mp4">
+<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
 </video>
 </div>
 
-</div>
-</div>
-
-<div class="section">
-<h2>مستند و طبیعت</h2>
-
-<div class="movies">
-
-<div class="movie">
-<h3>Nature Documentary</h3>
-<p>مستند | رایگان</p>
-<video controls>
-<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
-</video>
-</div>
-
-<div class="movie">
-<h3>Forest Nature</h3>
-<p>طبیعت | رایگان</p>
-<video controls>
-<source src="https://cdn.pixabay.com/video/2019/05/21/23673-337962655_large.mp4">
-</video>
-</div>
-
-</div>
-</div>
-
-<footer>
-© 2025 US.TV – نسخه آزمایشی | همه فیلم‌ها قانونی و رایگان
-</footer>
+</section>
 
 </body>
 </html>
