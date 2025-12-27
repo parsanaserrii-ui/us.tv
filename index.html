@@ -1,117 +1,126 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>US.TV | تماشای آنلاین فیلم</title>
+<title>US TV | تماشای آنلاین فیلم و سریال</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-* { box-sizing: border-box; margin:0; padding:0; }
-body {
-    font-family: Tahoma, sans-serif;
-    background:#0b0b0b;
-    color:#fff;
+body{
+  margin:0;
+  font-family:tahoma;
+  background:#0d0d0d;
+  color:#fff;
 }
-header {
-    background: linear-gradient(90deg,#e50914,#b20710);
-    padding:20px;
-    text-align:center;
-    font-size:28px;
-    font-weight:bold;
+header{
+  background:#111;
+  padding:20px;
+  font-size:26px;
+  text-align:center;
+  font-weight:bold;
 }
-nav {
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    background:#141414;
-    padding:10px;
-    font-size:14px;
+nav{
+  background:#1a1a1a;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
 }
-nav span {
-    cursor:pointer;
-    color:#ccc;
+nav a{
+  color:#fff;
+  text-decoration:none;
+  padding:15px 20px;
 }
-nav span:hover { color:#fff; }
-.section {
-    padding:20px;
+nav a:hover{
+  background:#ff3d00;
 }
-.section h2 {
-    margin-bottom:15px;
-    border-left:4px solid #e50914;
-    padding-left:10px;
-    color:#00ffcc;
+.section{
+  padding:25px;
 }
-.movies {
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
+.section h2{
+  margin-bottom:15px;
+  border-right:5px solid #ff3d00;
+  padding-right:10px;
 }
-.movie {
-    background:#1a1a1a;
-    border-radius:10px;
-    padding:15px;
-    transition: transform 0.2s;
+.movies{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
 }
-.movie:hover { transform:scale(1.03); }
-.movie img {
-    width:100%;
-    border-radius:8px;
+.card{
+  background:#1b1b1b;
+  border-radius:12px;
+  overflow:hidden;
+  transition:transform .3s;
 }
-.movie h3 {
-    margin:10px 0 5px;
-    font-size:16px;
+.card:hover{
+  transform:scale(1.05);
 }
-.movie p { font-size:13px; color:#aaa; }
-.movie video { width:100%; border-radius:8px; background:#000; margin-top:10px; }
-footer {
-    text-align:center;
-    padding:15px;
-    background:#141414;
-    font-size:13px;
-    color:#888;
+.card img{
+  width:100%;
 }
-@media(max-width:600px){
-    nav { flex-direction: column; gap:10px; }
+.card h3{
+  font-size:15px;
+  padding:10px;
+}
+.card p{
+  font-size:13px;
+  padding:0 10px 10px;
+  color:#ccc;
+}
+video{
+  width:100%;
+  background:#000;
+}
+footer{
+  background:#111;
+  text-align:center;
+  padding:15px;
+  font-size:13px;
+  color:#aaa;
 }
 </style>
 </head>
+
 <body>
 
-<header>US.TV – پلتفرم آنلاین فیلم</header>
+<header>🎬 US TV – تماشای آنلاین فیلم و سریال</header>
 
 <nav>
-<span>🎬 سینمایی</span>
-<span>😱 ترسناک</span>
-<span>🎞 کلاسیک</span>
-<span>🌿 مستند</span>
+  <a href="#">فیلم</a>
+  <a href="#">سریال</a>
+  <a href="#">کودک و نوجوان</a>
+  <a href="#">ویژه</a>
+  <a href="#">درباره ما</a>
 </nav>
 
 <div class="section">
-<h2>فیلم‌های سینمایی</h2>
+<h2>🎬 فیلم‌های سینمایی</h2>
 <div class="movies">
 
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Night+of+the+Living+Dead" alt="">
-<h3>Night of the Living Dead (1968)</h3>
-<p>ترسناک | رایگان</p>
+<div class="card">
+<img src="https://i.imgur.com/7b1dH2P.jpg">
+<h3>Big Buck Bunny</h3>
+<p>انیمیشن کوتاه | خانوادگی</p>
 <video controls>
-<source src="https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4" type="video/mp4">
+<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
 </video>
 </div>
 
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=The+General" alt="">
-<h3>The General (1926)</h3>
-<p>اکشن / کلاسیک | رایگان</p>
+<div class="card">
+<img src="https://i.imgur.com/Wq6KX7M.jpg">
+<h3>Sintel</h3>
+<p>فانتزی | ماجراجویی</p>
 <video controls>
-<source src="https://archive.org/download/TheGeneral1926_201905/TheGeneral1926.mp4" type="video/mp4">
+<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
 </video>
 </div>
 
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=His+Girl+Friday" alt="">
-<h3>His Girl Friday (1940)</h3>
-<p>کمدی / عاشقانه | رایگان</p>
+<div class="card">
+<img src="https://i.imgur.com/XC6mY5D.jpg">
+<h3>Tears of Steel</h3>
+<p>علمی تخیلی | درام</p>
 <video controls>
-<source src="https://archive.org/download/his_girl_friday/his_girl_friday_512kb.mp4" type="video/mp4">
+<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
 </video>
 </div>
 
@@ -119,33 +128,15 @@ footer {
 </div>
 
 <div class="section">
-<h2>مستند و طبیعت</h2>
+<h2>👶 کودک و نوجوان</h2>
 <div class="movies">
 
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Forest+Relax" alt="">
-<h3>🌿 Forest Relax</h3>
-<p>مستند | رایگان</p>
+<div class="card">
+<img src="https://i.imgur.com/fV5ZK9P.jpg">
+<h3>Elephant Dream</h3>
+<p>انیمیشن آموزشی</p>
 <video controls>
-<source src="https://cdn.pixabay.com/video/2020/03/30/34647-404026403_large.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Ocean+Waves" alt="">
-<h3>🌊 Ocean Waves</h3>
-<p>مستند | رایگان</p>
-<video controls>
-<source src="https://cdn.pixabay.com/video/2019/07/25/25301-350703053_large.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="movie">
-<img src="https://via.placeholder.com/300x160?text=Flowers+Close+Up" alt="">
-<h3>🌸 Flowers Close Up</h3>
-<p>مستند | رایگان</p>
-<video controls>
-<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
 </video>
 </div>
 
@@ -153,7 +144,7 @@ footer {
 </div>
 
 <footer>
-© 2025 US.TV – نسخه آزمایشی | همه فیلم‌ها قانونی و رایگان
+© 2025 US TV – نسخه آزمایشی پلتفرم نمایش آنلاین
 </footer>
 
 </body>
