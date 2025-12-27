@@ -4,8 +4,167 @@
 <meta charset="UTF-8">
 <title>US TV | تماشای آنلاین فیلم و سریال</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<style>
+<header>🎬 US TV – تماشای آنلاین فیلم و سریال</header>
+
+<nav>
+  <a href="index.html">خانه</a>
+  <a href="category.html">فیلم</a>
+  <a href="series.html">سریال</a>
+  <a href="category.html?type=kids">کودک و نوجوان</a>
+  <a href="about.html">درباره ما</a>
+</nav>
+
+<div class="section">
+<h2>🎬 فیلم‌های سینمایی</h2>
+<div class="movies" id="movie-list">
+  <!-- کارت‌های فیلم با JS اضافه می‌شوند -->
+</div>
+</div>
+
+<div class="section">
+<h2>👶 کودک و نوجوان</h2>
+<div class="movies" id="kids-list">
+  <!-- کارت‌های کودک با JS اضافه می‌شوند -->
+</div>
+</div>
+
+<footer>
+© 2025 US TV – نسخه آزمایشی پلتفرم نمایش آنلاین
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Big Buck Bunny | US TV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/movie.css">
+</head>
+<body>
+
+<header>🎬 US TV – تماشای آنلاین فیلم و سریال</header>
+
+<nav>
+  <a href="index.html">خانه</a>
+  <a href="category.html">فیلم</a>
+  <a href="series.html">سریال</a>
+  <a href="category.html?type=kids">کودک و نوجوان</a>
+  <a href="about.html">درباره ما</a>
+</nav>
+
+<div class="section movie-detail">
+  <div class="movie-poster">
+    <img src="assets/images/bigbuckbunny.jpg" alt="Big Buck Bunny">
+  </div>
+  <div class="movie-info">
+    <h1>Big Buck Bunny</h1>
+    <p>ژانر: انیمیشن کوتاه | خانوادگی</p>
+    <p>توضیحات: این یک انیمیشن کوتاه زیبا و سرگرم‌کننده برای تمام اعضای خانواده است.</p>
+    <video controls>
+      <source src="assets/videos/BigBuckBunny.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<footer>
+© 2025 US TV – نسخه آزمایشی پلتفرم نمایش آنلاین
+</footer>
+
+<script src="js/movie.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>دسته‌بندی‌ها | US TV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>🎬 US TV – دسته‌بندی فیلم‌ها</header>
+
+<nav>
+  <a href="index.html">خانه</a>
+  <a href="category.html">فیلم</a>
+  <a href="series.html">سریال</a>
+  <a href="category.html?type=kids">کودک و نوجوان</a>
+  <a href="about.html">درباره ما</a>
+</nav>
+
+<div class="section">
+<h2>فیلم‌های سینمایی</h2>
+<div class="movies" id="category-list">
+  <!-- JS می‌تواند فیلم‌ها را داینامیک اضافه کند -->
+</div>
+</div>
+
+<footer>
+© 2025 US TV – نسخه آزمایشی پلتفرم نمایش آنلاین
+</footer>
+
+<script>
+const categoryMovies = [
+  {title:"Big Buck Bunny", poster:"assets/images/bigbuckbunny.jpg"},
+  {title:"Sintel", poster:"assets/images/sintel.jpg"},
+  {title:"Tears of Steel", poster:"assets/images/tearsofsteel.jpg"}
+];
+const container = document.getElementById("category-list");
+categoryMovies.forEach(movie=>{
+  const card=document.createElement("div");
+  card.className="card";
+  card.innerHTML=`<img src="${movie.poster}" alt="${movie.title}"><h3>${movie.title}</h3>`;
+  container.appendChild(card);
+});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>سریال‌ها | US TV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>🎬 US TV – سریال‌ها</header>
+
+<nav>
+  <a href="index.html">خانه</a>
+  <a href="category.html">فیلم</a>
+  <a href="series.html">سریال</a>
+  <a href="category.html?type=kids">کودک و نوجوان</a>
+  <a href="about.html">درباره ما</a>
+</nav>
+
+<div class="section">
+<h2>سریال‌های محبوب</h2>
+<div class="movies">
+  <div class="card">
+    <img src="assets/images/series1.jpg" alt="Sample Series">
+    <h3>Sample Series 1</h3>
+    <p>فصل 1 – اپیزود 1</p>
+  </div>
+</div>
+</div>
+
+<footer>
+© 2025 US TV – نسخه آزمایشی پلتفرم نمایش آنلاین
+</footer>
+
+</body>
+</html>
 body{
   margin:0;
   font-family:tahoma;
@@ -78,74 +237,92 @@ footer{
   font-size:13px;
   color:#aaa;
 }
-</style>
-</head>
+.movie-detail{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  padding:25px;
+}
+.movie-poster img{
+  max-width:300px;
+  border-radius:12px;
+}
+.movie-info{
+  flex:1;
+}
+.movie-info h1{
+  font-size:24px;
+  margin-bottom:10px;
+}
+.movie-info p{
+  font-size:14px;
+  color:#ccc;
+  margin-bottom:10px;
+}
+.movie-info video{
+  width:100%;
+  background:#000;
+  border-radius:8px;
+  margin-top:10px;
+}
+@media (max-width:768px){
+  .movie-detail{
+    flex-direction:column;
+    align-items:center;
+  }
+  .movie-poster img{
+    max-width:100%;
+  }
+}
+const movies = [
+  {
+    title: "Big Buck Bunny",
+    genre: "انیمیشن کوتاه | خانوادگی",
+    poster: "assets/images/bigbuckbunny.jpg",
+    video: "assets/videos/BigBuckBunny.mp4"
+  },
+  {
+    title: "Sintel",
+    genre: "فانتزی | ماجراجویی",
+    poster: "assets/images/sintel.jpg",
+    video: "assets/videos/Sintel.mp4"
+  },
+  {
+    title: "Tears of Steel",
+    genre: "علمی تخیلی | درام",
+    poster: "assets/images/tearsofsteel.jpg",
+    video: "assets/videos/TearsOfSteel.mp4"
+  }
+];
 
-<body>
+const kidsMovies = [
+  {
+    title: "Elephant Dream",
+    genre: "انیمیشن آموزشی",
+    poster: "assets/images/elephantdream.jpg",
+    video: "assets/videos/ElephantDream.mp4"
+  }
+];
 
-<header>🎬 US TV – تماشای آنلاین فیلم و سریال</header>
+function renderMovies(list, containerId){
+  const container = document.getElementById(containerId);
+  list.forEach(movie=>{
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <img src="${movie.poster}" alt="${movie.title}">
+      <h3>${movie.title}</h3>
+      <p>${movie.genre}</p>
+      <video controls>
+        <source src="${movie.video}" type="video/mp4">
+      </video>
+    `;
+    container.appendChild(card);
+  });
+}
 
-<nav>
-  <a href="#">فیلم</a>
-  <a href="#">سریال</a>
-  <a href="#">کودک و نوجوان</a>
-  <a href="#">ویژه</a>
-  <a href="#">درباره ما</a>
-</nav>
-
-<div class="section">
-<h2>🎬 فیلم‌های سینمایی</h2>
-<div class="movies">
-
-<div class="card">
-<img src="https://i.imgur.com/7b1dH2P.jpg">
-<h3>Big Buck Bunny</h3>
-<p>انیمیشن کوتاه | خانوادگی</p>
-<video controls>
-<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="card">
-<img src="https://i.imgur.com/Wq6KX7M.jpg">
-<h3>Sintel</h3>
-<p>فانتزی | ماجراجویی</p>
-<video controls>
-<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="card">
-<img src="https://i.imgur.com/XC6mY5D.jpg">
-<h3>Tears of Steel</h3>
-<p>علمی تخیلی | درام</p>
-<video controls>
-<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
-</video>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2>👶 کودک و نوجوان</h2>
-<div class="movies">
-
-<div class="card">
-<img src="https://i.imgur.com/fV5ZK9P.jpg">
-<h3>Elephant Dream</h3>
-<p>انیمیشن آموزشی</p>
-<video controls>
-<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
-</video>
-</div>
-
-</div>
-</div>
-
-<footer>
-© 2025 US TV – نسخه آزمایشی پلتفرم نمایش آنلاین
-</footer>
-
-</body>
-</html>
+renderMovies(movies, "movie-list");
+renderMovies(kidsMovies, "kids-list");
+// این فایل آماده برای JS اختصاصی صفحات فیلم
+// می‌توانیم بعداً ویژگی‌های پیشرفته مثل علاقه‌مندی و پیشنهاد فیلم اضافه کنیم
+console.log("Movie page JS loaded");
