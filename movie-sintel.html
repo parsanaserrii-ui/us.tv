@@ -4,30 +4,88 @@
   <meta charset="UTF-8">
   <title>Sintel | US TV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- فونت فارسی -->
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      color: white;
+      font-family: Vazirmatn, sans-serif;
+    }
+
+    header {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      border-bottom: 1px solid #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background: black;
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    .meta {
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      color: #ff3d00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
-<body style="margin:0;background:#0d0d0d;color:white;font-family:Vazirmatn">
+<body>
 
-<header style="background:#111;padding:15px;text-align:center;font-size:22px">
-🎬 US TV
+<header>
+  🎬 US TV
 </header>
 
-<div style="max-width:900px;margin:auto;padding:20px">
+<div class="container">
 
-<video controls width="100%">
-  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
-</video>
+  <video controls>
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
+    مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند
+  </video>
 
-<h1>Sintel</h1>
-<p style="color:#ccc">انیمیشن | فانتزی | ماجراجویی</p>
+  <h1>Sintel</h1>
 
-<p>
-داستان دختری شجاع که برای نجات دوستش وارد سفری خطرناک می‌شود.
-</p>
+  <div class="meta">
+    انیمیشن | فانتزی | ماجراجویی
+  </div>
 
-<a href="index.html" style="color:#ff3d00">← بازگشت</a>
+  <p>
+    داستان دختری شجاع که برای نجات دوستش وارد سفری خطرناک و احساسی می‌شود.
+  </p>
+
+  <a class="back" href="index.html">← بازگشت به صفحه اصلی</a>
 
 </div>
+
 </body>
 </html>
