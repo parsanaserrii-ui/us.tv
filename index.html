@@ -1,151 +1,127 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>US TV | تماشای آنلاین فیلم و سریال</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>US TV | تماشای آنلاین فیلم و سریال</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
 
-<style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:'Vazirmatn',tahoma;
-  background:#0b0b0b;
-  color:#fff;
-}
-header{
-  background:linear-gradient(90deg,#ff3d00,#ff6d00);
-  padding:25px;
-  font-size:28px;
-  text-align:center;
-  font-weight:700;
-}
-nav{
-  background:#111;
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  padding:12px;
-}
-nav a{
-  color:#fff;
-  text-decoration:none;
-  font-size:15px;
-}
-nav a:hover{color:#ff6d00}
-
-.hero{
-  background:url('https://i.imgur.com/9ZQZQZB.jpg') center/cover;
-  padding:80px 20px;
-  text-align:center;
-}
-.hero h1{
-  font-size:34px;
-  margin-bottom:10px;
-}
-.hero p{
-  color:#ddd;
-  font-size:16px;
-}
-
-.section{
-  padding:30px;
-}
-.section h2{
-  border-right:5px solid #ff3d00;
-  padding-right:10px;
-  margin-bottom:20px;
-}
-
-.movies{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#151515;
-  border-radius:14px;
-  overflow:hidden;
-  transition:.3s;
-}
-.card:hover{transform:scale(1.05)}
-.card img{width:100%;display:block}
-.card h3{
-  font-size:16px;
-  padding:10px;
-}
-.card p{
-  font-size:13px;
-  padding:0 10px 10px;
-  color:#aaa;
-}
-
-footer{
-  background:#111;
-  text-align:center;
-  padding:15px;
-  font-size:13px;
-  color:#777;
-}
-</style>
+  <style>
+    body{
+      margin:0;
+      font-family:'Vazirmatn', sans-serif;
+      background:#0d0d0d;
+      color:#fff;
+    }
+    header{
+      background:#111;
+      padding:20px;
+      font-size:26px;
+      text-align:center;
+      font-weight:700;
+    }
+    nav{
+      background:#1a1a1a;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      padding:10px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      padding:8px 14px;
+    }
+    nav a:hover{
+      background:#ff3d00;
+      border-radius:6px;
+    }
+    .section{
+      padding:25px;
+    }
+    .section h2{
+      border-right:5px solid #ff3d00;
+      padding-right:10px;
+      margin-bottom:20px;
+    }
+    .movies{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .card{
+      background:#1b1b1b;
+      border-radius:12px;
+      overflow:hidden;
+      transition:transform .3s;
+    }
+    .card:hover{
+      transform:scale(1.05);
+    }
+    .card img{
+      width:100%;
+      display:block;
+    }
+    .card h3{
+      font-size:16px;
+      padding:10px;
+    }
+    .card p{
+      font-size:13px;
+      padding:0 10px 10px;
+      color:#ccc;
+    }
+    footer{
+      background:#111;
+      text-align:center;
+      padding:15px;
+      font-size:13px;
+      color:#aaa;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>🎬 US TV</header>
+<header>🎬 US TV – تماشای آنلاین فیلم و سریال</header>
 
 <nav>
-  <a href="index.html">خانه</a>
-  <a href="category.html">فیلم‌ها</a>
-  <a href="series.html">سریال‌ها</a>
-  <a href="about.html">درباره ما</a>
+  <a href="#">فیلم</a>
+  <a href="#">سریال</a>
+  <a href="#">کودک</a>
+  <a href="#">درباره ما</a>
 </nav>
 
-
-<div class="hero">
-  <h1>تماشای آنلاین فیلم و سریال</h1>
-  <p>بدون دانلود • کیفیت بالا • همیشه به‌روز</p>
-</div>
-
 <div class="section">
-<h2>🎥 فیلم‌های پیشنهادی</h2>
-<div class="movies">
+  <h2>فیلم‌های پیشنهادی</h2>
 
-<a href="movie.html" style="text-decoration:none;color:inherit">
-<div class="card">
-<img src="...">
-<h3>Big Buck Bunny</h3>
-<p>انیمیشن • خانوادگی</p>
-</div>
-</a>
+  <div class="movies">
 
+    <div class="card">
+      <img src="https://i.imgur.com/7b1dH2P.jpg">
+      <h3>Big Buck Bunny</h3>
+      <p>انیمیشن | خانوادگی</p>
+    </div>
 
-<div class="card">
-<img src="https://i.imgur.com/Wq6KX7M.jpg">
-<h3>Sintel</h3>
-<p>فانتزی • ماجراجویی</p>
-</div>
+    <div class="card">
+      <img src="https://i.imgur.com/Wq6KX7M.jpg">
+      <h3>Sintel</h3>
+      <p>فانتزی | ماجراجویی</p>
+    </div>
 
-<div class="card">
-<img src="https://i.imgur.com/XC6mY5D.jpg">
-<h3>Tears of Steel</h3>
-<p>علمی‌تخیلی • درام</p>
-</div>
+    <div class="card">
+      <img src="https://i.imgur.com/XC6mY5D.jpg">
+      <h3>Tears of Steel</h3>
+      <p>علمی تخیلی | درام</p>
+    </div>
 
-<div class="card">
-<img src="https://i.imgur.com/fV5ZK9P.jpg">
-<h3>Elephant Dream</h3>
-<p>انیمیشن • آموزشی</p>
-</div>
-
-</div>
+  </div>
 </div>
 
 <footer>
-© 2025 US TV – نسخه نمایشی پلتفرم VOD
+© 2025 US TV – نسخه آزمایشی
 </footer>
 
 </body>
