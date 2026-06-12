@@ -1,1 +1,23 @@
-
+[
+  {
+    "id": 1,
+    "title": "Big Buck Bunny",
+    "category": "انیمیشن",
+    "poster": "https://picsum.photos/400/600?random=1",
+    "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "id": 2,
+    "title": "Sintel",
+    "category": "فانتزی",
+    "poster": "https://picsum.photos/400/600?random=2",
+    "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "id": 3,
+    "title": "Tears Of Steel",
+    "category": "علمی تخیلی",
+    "poster": "https://picsum.photos/400/600?random=3",
+    "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+  }
+]
